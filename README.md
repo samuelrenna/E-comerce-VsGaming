@@ -82,3 +82,9 @@ versus-gaming/
 ├── index.html          # HTML principal
 ├── package.json        # Dependencias y scripts
 └── vite.config.js      # Configuración de Vite
+
+## Autor
+* Samuel Renna - Desarrollador Web.
+
+---
+© 2023 MancoCanal, Este proyecto fue realizado con fines educativos como parte del curso de Desarrollo Web de CoderHouse.

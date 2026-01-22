@@ -87,4 +87,4 @@ versus-gaming/
 * Samuel Renna - Desarrollador Web.
 
 ---
-© 2023 MancoCanal, Este proyecto fue realizado con fines educativos como parte del curso de Desarrollo Web de CoderHouse.
+© Versus Gaming, Este proyecto fue realizado con fines educativos como parte del curso de React.JS de CoderHouse.

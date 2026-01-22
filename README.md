@@ -83,6 +83,8 @@ versus-gaming/
 ├── package.json        # Dependencias y scripts
 └── vite.config.js      # Configuración de Vite
 
+```
+
 ## Autor
 * Samuel Renna - Desarrollador Web.
 

@@ -1,84 +1,83 @@
-Versus Gaming
+# 🎮 Versus Gaming
 
-¡Bienvenido a Versus Gaming! Esta es una aplicación de comercio electrónico para productos de videojuegos. Aquí puedes encontrar una amplia variedad de productos relacionados con videojuegos, desde consolas hasta accesorios y más.
-Instalación
+**E-commerce desarrollado en React para productos de videojuegos.**
+
+🔗 **[Ver Demo Desplegada en Vercel](https://proyecto-final-renna-l2ri.vercel.app/)**
+
+---
+
+## ⚠️ Estado del Proyecto (Base de Datos)
+> **Atención:** La conexión con **Firebase** (Base de datos) se encuentra actualmente pausada debido a límites del plan gratuito.
+> * **En el Deploy:** Es posible que los productos no carguen o el checkout no finalice.
+> * **En Local:** Para probar la funcionalidad completa, necesitarás configurar tus propias credenciales (ver sección *Instalación*).
+
+## 📋 Descripción
+Versus Gaming es una Single Page Application (SPA) simulando una tienda en línea. Permite navegar por categorías, ver detalles de productos, gestionar un carrito de compras y simular un proceso de checkout.
+
+## 🚀 Características Principales
+* **Navegación Dinámica:** Rutas para Home, Categorías y Detalle de producto.
+* **Gestión de Carrito:** Estado global manejado con Context API para agregar/eliminar items.
+* **Checkout:** Formulario de compra validado para finalizar pedidos.
+* **Feedback UI:** Notificaciones visuales para acciones del usuario usando `react-toastify`.
+* **Diseño:** Interfaz responsiva con Bootstrap y CSS personalizado.
+
+## 🛠️ Tecnologías Utilizadas
+El proyecto utiliza las siguientes dependencias clave:
+* **Core:** `React` (v18.2.0), `Vite`
+* **Routing:** `react-router-dom` (v6.22.0)
+* **Estilos:** `bootstrap` (v5.3.2), `react-bootstrap`
+* **Backend (BaaS):** `firebase` (v10.8.1)
+* **Utilidades:** `react-hook-form` (formularios), `react-toastify` (alertas)
+
+## 📦 Instalación y Ejecución
 
 Para ejecutar la aplicación localmente, sigue estos pasos:
 
-    Clona este repositorio en tu máquina local:
+1.  **Clona el repositorio:**
+    ```bash
+    git clone [https://github.com/tu-usuario/versus-gaming.git](https://github.com/tu-usuario/versus-gaming.git)
+    cd versus-gaming
+    ```
 
-    bash
+2.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
 
-git clone https://tu-repositorio.git
+3.  **Configuración (Requerido para Base de Datos):**
+    Para que la app funcione correctamente, debes crear un archivo `.env` en la raíz con tus propias credenciales de Firebase:
+    ```env
+    VITE_API_KEY=tu_api_key
+    VITE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
+    VITE_PROJECT_ID=tu_proyecto
+    VITE_STORAGE_BUCKET=tu_proyecto.appspot.com
+    VITE_MESSAGING_SENDER_ID=tu_sender_id
+    VITE_APP_ID=tu_app_id
+    ```
 
-Instala las dependencias utilizando npm:
-
-npm install
-
-Ejecuta el servidor de desarrollo:
-
-arduino
-
+4.  **Ejecuta el servidor de desarrollo:**
+    ```bash
     npm run dev
+    ```
 
-    Abre tu navegador y ve a http://localhost:3000 para ver la aplicación.
+5.  **Abre tu navegador:**
+    Ve a la dirección que te indique la terminal (usualmente `http://localhost:5173`) para ver la aplicación.
 
-Dependencias
+## 📂 Estructura del Proyecto
 
-    Bootstrap: ^5.3.2
-    Bootstrap Icons: ^1.11.3
-    Firebase: ^10.8.1
-    React: ^18.2.0
-    React Bootstrap: ^2.10.0
-    React DOM: ^18.2.0
-    React Hook Form: ^7.51.0
-    React Router DOM: ^6.22.0
-    React Toastify: ^10.0.4
-
-Estructura del Proyecto
-
-El proyecto sigue la siguiente estructura:
-
-java
-
-versus-gamingDos/
+```text
+versus-gaming/
 │
-├── img/
-│   └── ...
-│
-├── node_modules/
-│   └── ...
-│
-├── public/
-│   ├── index.html
-│   └── ...
-│
+├── public/              # Archivos estáticos
 ├── src/
-│   ├── components/
-│   ├── context/
-│   ├── services/
-│   ├── styles/
-│   ├── App.js
-│   └── ...
+│   ├── components/     # Componentes de React (NavBar, ItemList, Cart, etc.)
+│   ├── context/        # Contexto global (CartContext)
+│   ├── services/       # Configuración de Firebase
+│   ├── styles/         # Archivos CSS
+│   ├── App.jsx         # Componente principal y rutas
+│   └── main.jsx        # Punto de entrada
 │
-├── .eslintrc.cjs
-├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
-├── readme.md
-└── vite.config.js
-
-Ejecución del Proyecto
-
-La aplicación se ejecuta utilizando Vite, un entorno de desarrollo web rápido. Para iniciar el servidor de desarrollo, utiliza el siguiente comando:
-
-arduino
-
-npm run dev
-
-Contribución
-
-¡Las contribuciones son bienvenidas! Si tienes sugerencias, mejoras o encuentras algún problema, no dudes en abrir un issue o enviar un pull request.
-
-Este README proporciona una visión general de la aplicación, los pasos de instalación, las dependencias utilizadas, la estructura del proyecto y cómo ejecutarlo. ¡Espero que te sea útil! Si necesitas más información o tienes alguna pregunta, no dudes en preguntar.
+├── .eslintrc.cjs       # Configuración de ESLint
+├── index.html          # HTML principal
+├── package.json        # Dependencias y scripts
+└── vite.config.js      # Configuración de Vite
